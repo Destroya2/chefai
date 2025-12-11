@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Carnet Gourmet - Partage de recettes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <div class="logo-icon">G</div>
+        <div class="logo-text">
+          <span class="logo-title">Mon Carnet Gourmet</span>
+          <span class="logo-sub">Par Alexis Nikiema</span>
+        </div>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#chef-ai">Chef AI</a>
+        <a href="#about">À propos</a>
+        <a href="#download" class="nav-cta">Télécharger</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="badge"> Application de partage de recettes</div>
+          <h1>Tes recettes préférées,<br><span class="highlight">toujours à portée de main</span></h1>
+          <p class="hero-description">
+            Crée ton carnet de recettes personnel, découvre des plats du monde entier 
+            et profite de l'aide de Chef AI pour cuisiner facilement au quotidien.
+          </p>
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary">Télécharger l'app</a>
+            <a href="#features" class="btn btn-secondary">En savoir plus</a>
+          </div>
+          <p class="hero-note">Bientôt disponible sur Android</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ce que tu peux faire</h2>
+          <p>Une application pensée pour simplifier ta cuisine au quotidien</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon"></div>
+            <h3>Ton carnet personnel</h3>
+            <p>Garde toutes tes recettes au même endroit avec photos, ingrédients et étapes détaillées</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon"></div>
+            <h3>Cuisine du monde</h3>
+            <p>Découvre et partage des recettes venues de tous les pays avec la communauté</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon"></div>
+            <h3>Assistant Chef AI</h3>
+            <p>Demande des idées de repas, des astuces de cuisson ou des variantes de recettes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chef AI -->
+    <section id="chef-ai" class="section section-dark">
+      <div class="container">
+        <div class="chef-grid">
+          <div class="chef-content">
+            <h2>Chef AI, ton assistant cuisine intelligent</h2>
+            <p class="chef-intro">
+              Pose tes questions directement dans l'app et reçois des réponses adaptées 
+              à tes besoins du moment.
+            </p>
+            <ul class="chef-list">
+              <li><strong>Propose des recettes selon les ingrédients que tu as</strong></li>
+              <li><strong>Explique les étapes de façon simple et claire</strong></li>
+              <li><strong>Suggère des variantes végétariennes, légères ou rapides</strong></li>
+            </ul>
+          </div>
+          <div class="chef-demo">
+            <div class="chat-bubble user">J'ai du poulet et des légumes. Une idée ?</div>
+            <div class="chat-bubble ai">Je te propose un poulet sauté aux légumes avec sauce soja. Simple et rapide !</div>
+            <div class="chat-bubble user">Parfait ! Donne-moi la recette complète</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="assets/alexis.png" alt="Alexis Nikiema" />
+          </div>
+          <div class="about-content">
+            <h2>Développé par Alexis Nikiema</h2>
+            <p>
+              Passionné de cuisine et de développement, j'ai créé Mon Carnet Gourmet 
+              pour réunir tous mes amis gourmands autour d'une app simple et utile.
+            </p>
+            <p>
+              L'objectif : permettre à chacun de conserver facilement ses recettes favorites, 
+              découvrir de nouvelles inspirations culinaires et profiter de l'intelligence 
+              artificielle pour cuisiner mieux au quotidien.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="section section-download">
+      <div class="container">
+        <div class="download-box">
+          <h2>Reste informé du lancement</h2>
+          <p>Laisse ton e-mail pour être prévenu dès que l'application sera disponible sur Android</p>
+          <form class="notify-form" onsubmit="event.preventDefault(); showThanks();">
+            <input type="email" placeholder="ton-email@exemple.com" required />
+            <button type="submit" class="btn btn-primary">Me prévenir</button>
+          </form>
+          <p id="notifyMessage" class="notify-message"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mon Carnet Gourmet · Créé par Alexis Nikiema</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
